@@ -37,7 +37,7 @@
     </tr>
 
 <?php
-$servername = "db:3306";
+$servername = "localhost";
 $username = "root";
 $password = "Azerty01";
 $dbname = "gestioncompte";
