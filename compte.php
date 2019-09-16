@@ -39,7 +39,7 @@
 <?php
 $servername = "db:3306";
 $username = "root";
-$password = "a";
+$password = "Azerty01";
 $dbname = "gestioncompte";
 
 // Create connection
