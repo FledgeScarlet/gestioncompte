@@ -24,3 +24,5 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+<br>
+<a href="index.php"> retour</a><br>

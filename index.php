@@ -12,6 +12,7 @@ if ($conn->connect_error) {
 }
 
 echo '<a href="client.php">Accès Client</a><br/>';
+echo '<a href="ajoutclient.html">Ajouter un Client</a><br/>';
 
 $sql = "SELECT id FROM clients ";
 $result = $conn->query($sql);
