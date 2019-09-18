@@ -9,7 +9,7 @@
         th {
             font-family: monospace;
             border: thin solid #6495ed;
-            width: 30%;
+            width: 25%;
             padding: 5px;
             background-color: #D0E3FA;
             background-image: url(sky.jpg);
@@ -17,7 +17,7 @@
         td {
             font-family: sans-serif;
             border: thin solid #6495ed;
-            width: 30%;
+            width: 25%;
             padding: 5px;
             text-align: center;
             background-color: #fd6c9e;
@@ -34,6 +34,8 @@
         <th>Solde</th>
         <th>n°compte</th>
         <th>id du client</th>
+		<th>Transaction</th>
+		<th>Affichage de la transaction</th>
     </tr>
 
 <?php
@@ -58,11 +60,16 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         echo '<tr>';
         echo "<td>" . $row["idcb"]. "</td><td>" . $row["solde"]. " €" . " </td><td>" . $row["ncompte"]. " </td><td> " . $row["idclient"]."</td>";
+		echo "<td>" . '<a href="ajoutertransaction.php?idcb=' . $row['idcb'] . '">Ajouter une transaction</a><br> ' . "</td>";
+		echo "<td>" . '<a href="listetransaction.php?idcb=' . $row['idcb'] .'">Affichage des transactions </a><br/><br>' . "</td>";
         echo '</tr>';
+        
+		
     }
 } else {
     echo "Wesh t'a pas de compte abonne toi";
 }
+		
 $conn->close();
 ?>
 </table>

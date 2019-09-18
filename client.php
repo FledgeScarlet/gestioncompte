@@ -18,8 +18,8 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         echo "id: " . $row["id"]. " - Client: " . $row["nom"]. " " . $row["prenom"]. " - Née le: " . $row["datenaissance"]."<br>";
-        echo '<a href="ajoutcompte.php?idclient=' . $row['id'] . '">Ajouter un compte</a><br> ';
-        echo '<a href="compte.php?user=' . $row['id'] .'">Affichage des compte </a><br/><br>';
+		echo '<a href="ajoutcompte.php?idclient=' . $row['id'] . '">Ajouter un compte</a><br> ';
+		echo '<a href="compte.php?user=' . $row['id'] .'">Affichage des compte </a><br/><br>';
     }
 } else {
     echo "0 results";
