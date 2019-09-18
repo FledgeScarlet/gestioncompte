@@ -22,5 +22,5 @@ if ($conn->query($sql) === TRUE) {
 }
 $conn->close();
 ?>
-    <br>
-    <a href="index.php"> retour</a><br><?php
+<br>
+<a href="client.php"> retour</a><br>

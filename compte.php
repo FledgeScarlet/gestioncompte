@@ -67,6 +67,6 @@ $conn->close();
 ?>
 </table>
 <br>
-<a href="index.php"> retour</a><br>
+<a href="client.php"> retour</a><br>
 </body>
 </html>

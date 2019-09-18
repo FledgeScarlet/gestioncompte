@@ -12,12 +12,12 @@ if ($conn->connect_error) {
 }
 
 echo '<a href="client.php">Accès Client</a><br/>';
-echo '<a href="ajoutclient.html">Ajouter un Client</a><br/>';
-echo '<a href="ajoutcompte.html">Ajouter un compte pour un client</a><br/>';
+echo '<a href="ajoutclient.html">Ajouter un client</a><br/>';
+//echo '<a href="ajoutcompte.html">Ajouter un compte pour un client</a><br/>';
 
-$sql = "SELECT id FROM clients ";
-$result = $conn->query($sql);
-    while($row = $result->fetch_assoc()) {
-        echo '<a href="compte.php?user=' . $row['id'] .'">Afficher Client ' . $row['id'] . '</a><br/>';
-    }
+//$sql = "SELECT id FROM clients ";
+//$result = $conn->query($sql);
+//while($row = $result->fetch_assoc()) {
+//echo '<a href="compte.php?user=' . $row['id'] .'">Afficher Client ' . $row['id'] . '</a><br/>';
+// }
 ?>
